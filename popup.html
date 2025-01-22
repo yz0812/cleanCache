@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>缓存清理工具</title>
+  <link rel="stylesheet" type="text/css" href="popup.css">
+</head>
+<body>
+  <div class="container">
+    <h2>缓存清理工具</h2>
+    <div class="cleanup-container">
+      <div class="cleanup-item">
+        <label>
+          <input type="checkbox" id="cache" checked>
+          <div class="item-info">
+            <span class="item-name">浏览器缓存</span>
+            <span class="item-stats" id="cacheSize">计算中...</span>
+          </div>
+        </label>
+      </div>
+      <div class="cleanup-item">
+        <label>
+          <input type="checkbox" id="localStorage" checked>
+          <div class="item-info">
+            <span class="item-name">LocalStorage</span>
+            <span class="item-stats" id="localStorageCount">计算中...</span>
+          </div>
+        </label>
+      </div>
+      <div class="cleanup-item">
+        <label>
+          <input type="checkbox" id="sessionStorage" checked>
+          <div class="item-info">
+            <span class="item-name">SessionStorage</span>
+            <span class="item-stats" id="sessionStorageCount">计算中...</span>
+          </div>
+        </label>
+      </div>
+      <div class="cleanup-item">
+        <label>
+          <input type="checkbox" id="cookies" checked>
+          <div class="item-info">
+            <span class="item-name">Cookies</span>
+            <span class="item-stats" id="cookiesCount">计算中...</span>
+          </div>
+        </label>
+      </div>
+    </div>
+    <button id="clearButton">清除选中项</button>
+    <div id="status"></div>
+  </div>
+  <script src="popup.js"></script>
+</body>
+</html> 
