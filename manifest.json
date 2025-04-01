@@ -1,6 +1,6 @@
 {
   "manifest_version": 3,
-  "name": "缓存清理工具",
+  "name": "CCGO",
   "version": "1.0",
   "description": "清除浏览器缓存、LocalStorage、SessionStorage、Cookies和Web Storage",
   "permissions": [
